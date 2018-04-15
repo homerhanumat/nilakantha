@@ -1,5 +1,5 @@
 ---
-title: "Summation Proofs in the Tantrasamgraha of Nilakantha Somayajin"
+title: "Summation Proofs in the Aryabhatiyabhasya of Nilakantha Somayajin"
 author: "Homer White"
 output:
   revealjs::revealjs_presentation:
@@ -47,7 +47,7 @@ Pat's doctoral training was in quadratic forms.
 * "If [Aryabhata's] constants give the correct results for conjunctions and eclipses, they must be considered as accidental as the letters cut into wood by weevils."  (BrShSi I.62)
 * "Men who have learned from the works of Srisena, Visnucandra and Aryabhata cannot face me in any debate, like the deer who sees the lion."  (BrShSi I.63)
 
-(trans. modified from Satya Prakash)
+(Translation modified from Satya Prakash, see [2].)
 
 ## Square-Nature Problem
 
@@ -118,7 +118,7 @@ But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-ma
 * Nilakantha Somayagin (*circa* 1450-1550) is in this line.
 
 
-## TantraSamgraha
+## Aryabhatiyabhasya
 
 * Commentary on the *Aryabhatiya* of Aryabhata (400's CE)
 * One of the earliest commentaries to offer detailed proofs of most propositions.
@@ -129,15 +129,15 @@ But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-ma
 
 ## Aryabhata 22
 
-$$1^2+2^2+\ldots+n^2=\frac{n(n+1)2n+1)}{6}.$$
+$$1^2+2^2+\ldots+n^2=\frac{n(n+1)(2n+1)}{6}.$$
 $$1^3+2^3+\ldots+n^3=\left(\frac{n(n+1)}{2}\right)^2.$$
 
 
 ## Nilakantha's Proof (Cubes)
 
-Part of it has been translated (by Kim Plofker):
+Part of it has been translated by Kim Plofker (in [1]).
 
-My aim is to show what's in the omitted passage.
+My aim is to fill in the omitted passage.
 
 ##
 
@@ -431,10 +431,10 @@ text(8, 2, expression(4^3))
 
 ## References/Resources
 
-* *The Mathematics of Egypt, Mesopotamia, China, India and Islam:  A Sourcebook*, ed. V Katz. Princeton University Press, 2007.
-* *Brahmagupta and His Works*, Satya Prakash.  Indian Inst. Astronomical & Sanskrit Research, New Delhi, 1968.
-* *Mathematics in India*, Kim Plofker.  Princeton University Press, 2009.
-* *The Arybhatiya of Aryabhatacarya, with the Bhasya of Nilakanthasomsutvan*, ed. K. Sambasiva Sastri, Trivandrum, 1930.
+1. *The Mathematics of Egypt, Mesopotamia, China, India and Islam:  A Sourcebook*, ed. V Katz. Princeton University Press, 2007.
+2. *Brahmagupta and His Works*, Satya Prakash.  Indian Inst. Astronomical & Sanskrit Research, New Delhi, 1968.
+3. *Mathematics in India*, Kim Plofker.  Princeton University Press, 2009.
+4. *The Arybhatiya of Aryabhatacarya, with the Bhasya of Nilakanthasomasutvan*, ed. K. Sambasiva Sastri, Trivandrum, 1930.
 
 
 
