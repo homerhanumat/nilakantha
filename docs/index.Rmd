@@ -70,6 +70,9 @@ Then a solution of $Nx^2 + k_1k_2 = y^2$ is:
 
 $$(x,y) = (\alpha_1\beta_2 + \alpha_2\beta_1, N\alpha_1\alpha_2+\beta_1\beta_2).$$
 
+This is called *composition* (*bhavana*, for the Indian mathematicians.)
+
+
 ## "Modern" Proof ($\approx$ J. Wallis, 1658 CE)
 
 Assume that:
