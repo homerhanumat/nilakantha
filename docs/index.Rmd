@@ -14,6 +14,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(emo)
 ```
 
 ```{r}
@@ -140,7 +141,7 @@ But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-ma
 * Nilakantha's late-in-life work, a commentary on the *Aryabhatiya* of Aryabhata (400's CE)
 * Offers detailed proofs of most propositions.
 
-## Typical Text (No Diagrams!)
+## Typical Text (No Diagrams! `r ji("worried")`)
 
 ![Nila text](text.png)
 
