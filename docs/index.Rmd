@@ -3,6 +3,7 @@ title: "Summation Proofs in the Aryabhatiyabhasya of Nilakantha Somayajin"
 author: "Homer White"
 output:
   revealjs::revealjs_presentation:
+    css: styles.css
     theme: sky
     center: true
     transition: convex
@@ -22,8 +23,8 @@ rectcol <- "lightgray"
 myPal <- brewer.pal(n = 3, "Set2")
 ```
 
+# Prolegomena Quadratica
 
-# Prelude
 
 ## Congratulations, Pat Costello!
 
@@ -31,7 +32,7 @@ Pat's doctoral training was in quadratic forms.
 
 ## Brahmagupta
 
-* *Brahmashutasiddhanta* (628 CE)
+* *Brahmasphutasiddhanta* (628 CE)
 * Like most other text, contains substantial material on astronomy/astrology.
 * First surviving text to distinguish between:
     - "manifest" computation (arithmetic)
@@ -42,20 +43,20 @@ Pat's doctoral training was in quadratic forms.
    
 ## So He Was Good ...
 
-... and he was only too happy to say so:
+... and was only too happy to say so:
 
 * "If [Aryabhata's] constants give the correct results for conjunctions and eclipses, they must be considered as accidental as the letters cut into wood by weevils."  (BrShSi I.62)
 * "Men who have learned from the works of Srisena, Visnucandra and Aryabhata cannot face me in any debate, like the deer who sees the lion."  (BrShSi I.63)
 
 (Translation modified from Satya Prakash, see [2].)
 
-## Square-Nature Problem
+## Square-Nature Lemma
 
-BrShSi 18.64-65:
+From BrShSi 18.64-65:
 
-Put down twice the square-root of a given square multiplied by a multiplier and increased or diminished by an arbitrary number.  The product of the first pair multiplied by the multiplier, with the product of the last pair, is the last computed.
+64. Put down twice the square-root of a given square multiplied by a multiplier and increased or diminished by an arbitrary number.  The product of the first pair multiplied by the multiplier, with the product of the last pair, is the last computed.
 
-The sum of the thunderbolts is the first.  The additive is equal to the product of the additives.  The two square roots, divided by the additive or the subtractive, are the additive rupas.
+65. The sum of the thunderbolts is the first ... .
 
 ## In Modern Parlance
 
@@ -64,38 +65,54 @@ Suppose that
 * $(x,y) = (\alpha_1, \beta_1)$ satisfies $Nx^2 + k_1 = y^2$
 * $(x,y) = (\alpha_2, \beta_2)$ satisfies $Nx^2 + k_2 = y^2$
 
-Then two solutions of $Nx^2 + k_1k_2 = y^2$ are:
+Then a solution of $Nx^2 + k_1k_2 = y^2$ is:
 
-$$(x,y) = (\alpha_1\beta_2 \pm \alpha_2\beta_1,\beta_1\beta_2 \pm N\alpha_1\alpha_2).$$
+$$(x,y) = (\alpha_1\beta_2 + \alpha_2\beta_1, N\alpha_1\alpha_2+\beta_1\beta_2).$$
 
-## A Modern Proof
+## "Modern" Proof ($\approx$ J. Wallis, 1658 CE)
 
 Assume that:
 
-* $N\alpha_1^2 + k_1 = \beta_1^2$
+* $N\alpha_1^2 + k_1 = \beta_1^2$ (So $N\alpha_1^2 + k_1 = (-\beta_1)^2$)
 * $N\alpha_2^2 + k_2 = \beta_2^2$
 
 Consider "Brahmagupta's Identity":
 
-$$(a^2+nb^2)(c^2+nd^2)=(ac+nbd)^2+n(ad-bc)^2.$$
+$$(a^2+nb^2)(c+nd^2)=(ac+nbd)^2+n(ad-bc)^2.$$
 
-Substitute:  $n = -N, a = \beta_1, b = \alpha_1, c = \beta_2, d = \alpha_2$.
+Substitute:  $n = -N, a = -\beta_1, b = \alpha_1, c = \beta_2, d = \alpha_2$.
 
 
-$$(\beta_1-n\alpha_1^2)(\beta_2-N\alpha_2^2)=(\beta_1\beta_2-N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2-\alpha_1\beta_2)^2.$$
+$$((-\beta_1)^2-N\alpha_1^2)(\beta_2-N\alpha_2^2)\\
+=((-\beta_1)\beta_2-N\alpha_1\alpha_2)^2-N((-\beta_1)\alpha_2-\alpha_1\beta_2)^2.$$
 
 ##
 
 $$
 \begin{aligned}
-(\beta_1-n\alpha_1^2)(\beta_2-N\alpha_2^2)=(\beta_1\beta_2-N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2-\alpha_1\beta_2)^2,\\
-k_1k_2=(\beta_1\beta_2-N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2-\alpha_1\beta_2)^2,\\
-k_1k_2+N(\beta_1\alpha_2-\alpha_1\beta_2)^2=(\beta_1\beta_2-N\alpha_1\alpha_2)^2,\\
-N(\alpha_1\beta_2- \beta_1\alpha_2)^2 + k_1k_2=(\beta_1\beta_2-N\alpha_1\alpha_2)^2.
+((-\beta_1)^2-N\alpha_1^2)(\beta_2^2-N\alpha_2^2)=(\beta_1\beta_2+N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2+\alpha_1\beta_2)^2,\\
+(-k_1)(-k_2)=(\beta_1\beta_2+N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2+\alpha_1\beta_2)^2,\\
+N(\beta_1\alpha_2+\alpha_1\beta_2)^2+k_1k_2=(\beta_1\beta_2+N\alpha_1\alpha_2)^2,\\
+N(\beta_1\alpha_2+\alpha_1\beta_2)^2+k_1k_2=(N\alpha_1\alpha_2 + \beta_1\beta_2)^2.
 \end{aligned}
 $$
 
-For $+$ versions, note that $(\alpha_1, -\beta_1)$ also solves $Nx^2+k_1=y^2$.
+
+
+## The Rest of Verse 65
+
+65. ... The two square roots, divided by the additive or the subtractive, are the additive solutions.
+
+## What Does This Mean?
+
+Brahmagupta wants integral solutions of equations of the form $Nx^2 + 1 = y^2$. His idea:
+
+1. Find a "close" solution for some $k$:  i.e., find $a,b$ so that $Na^2 + k = b^2$
+2. Then by his lemma, a solution of is $Nx^2 + k^2 = y^2$:
+
+$$x = 2ab, \,\,y = Na^2+b^2.$$
+3. Brahmagupta knew that if $k=\pm1, \pm2$ then both $x$ and $y$ are multiples of $k$.  Hence $(x/k, y/k)$ are integral solutions of  $Nx^2 + 1 = y^2$.
+
 
 ## "Brahmagupta Identity"
 
@@ -120,10 +137,10 @@ But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-ma
 
 ## Aryabhatiyabhasya
 
-* Commentary on the *Aryabhatiya* of Aryabhata (400's CE)
-* One of the earliest commentaries to offer detailed proofs of most propositions.
+* Nilakantha's late-in-life work, a commentary on the *Aryabhatiya* of Aryabhata (400's CE)
+* Offers detailed proofs of most propositions.
 
-## 
+## Typical Text (No Diagrams!)
 
 ![Nila text](text.png)
 
