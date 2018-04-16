@@ -1,6 +1,6 @@
 ---
 title: "Summation Proofs in the Aryabhatiyabhasya of Nilakantha Somayajin"
-author: "Homer White"
+author: "Homer White, Georgetown College"
 output:
   revealjs::revealjs_presentation:
     css: styles.css
