@@ -115,7 +115,40 @@ Brahmagupta wants integral solutions of equations of the form $Nx^2 + 1 = y^2$. 
 2. Then by his lemma, a solution of is $Nx^2 + k^2 = y^2$:
 
 $$x = 2ab, \,\,y = Na^2+b^2.$$
-3. Brahmagupta knew that if $k=\pm1, \pm2$ then both $x$ and $y$ are multiples of $k$.  Hence $(x/k, y/k)$ are integral solutions of  $Nx^2 + 1 = y^2$.
+3. Brahmagupta knew that if $k=\pm1, \pm2, \pm4$ then both $x$ and $y$ are multiples of $k$.  Hence $(x/k, y/k)$ are integral solutions of  $Nx^2 + 1 = y^2$.
+
+## Possible Rationale ($k=4$)
+
+Suppose that $a$ and $b$ are integers such that
+
+$$Na^2 + 4 = b^2$$.
+
+Then
+
+$$N\left(\frac{a}{2}\right)^2+1=\left(\frac{b}{2}\right)^2.$$
+
+
+##
+
+*Bhavana* of $(a/2, b/2)$ with itself yields solution:
+
+$$(\frac{ab}{2},\frac{b^2}{4}+N\frac{a^2}{4}).$$
+
+Substituting $N = \frac{b^2-4}{a^2}$, this becomes:
+
+$$(\frac{ab}{2},\frac{b^2}{4}+\frac{b^2-4}{4}).$$
+
+If $b$ is even, then we are done.
+
+##
+
+If $b$ is odd, then perform *bhavana* of this most recent solution with $(a/2, b/2)$, eventually getting:
+
+$$(a\frac{b^2-1}{2},b\frac{b^2-3}{2}).$$
+
+This solution is integral.
+
+
 
 
 ## "Brahmagupta Identity"
@@ -125,6 +158,20 @@ $$(a^2+nb^2)(c^2+nd^2)=(ac+nbd)^2+n(ad-bc)^2.$$
 Not mentioned by Brahmagupta.  Also not mentioned in any extant pre-modern Indian proofs (that I know of).
 
 But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-manjul-bhargava) as a child.
+
+## Later Developments
+
+Jayadeva ($\sim 900$'s CE) is said to have developed the iterative *chakravala* ("cyclic") method that
+
+* begins with integral "close" solution $Na^2+k=b^2$
+* produces integral solutution for a $k$ smaller in absolute value
+* terminates in $k = \pm1,\pm2\pm4$.
+
+Bhaskara (1200's CE) describes this method in his work *Bijaganita*.
+
+A.A.K Ayyangar provides a proof (1930), said to contai error.
+
+Anne Bauval (2010) gives a corrected, shorter proof.
 
 # Nilakantha's Summations
 
@@ -456,6 +503,7 @@ text(8, 2, expression(4^3))
 2. *Brahmagupta and His Works*, Satya Prakash.  Indian Inst. Astronomical & Sanskrit Research, New Delhi, 1968.
 3. *Mathematics in India*, Kim Plofker.  Princeton University Press, 2009.
 4. *The Arybhatiya of Aryabhatacarya, with the Bhasya of Nilakanthasomasutvan*, ed. K. Sambasiva Sastri, Trivandrum, 1930.
+5. "An elementary proof of the halting property of the chakravala algorithm," Anne Bauval, [http://arxiv.org/pdf/1406.6809v1.pdf](http://arxiv.org/pdf/1406.6809v1.pdf).
 
 
 
