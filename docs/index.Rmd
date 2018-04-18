@@ -87,7 +87,7 @@ $$(a^2+nb^2)(c+nd^2)=(ac+nbd)^2+n(ad-bc)^2.$$
 Substitute:  $n = -N, a = -\beta_1, b = \alpha_1, c = \beta_2, d = \alpha_2$.
 
 
-$$((-\beta_1)^2-N\alpha_1^2)(\beta_2-N\alpha_2^2)\\
+$$((-\beta_1)^2-N\alpha_1^2)(\beta_2^2-N\alpha_2^2)\\
 =((-\beta_1)\beta_2-N\alpha_1\alpha_2)^2-N((-\beta_1)\alpha_2-\alpha_1\beta_2)^2.$$
 
 ##
@@ -317,20 +317,20 @@ rect(xleft = 0, ybottom = 0, xright = 1, ytop = 4,
 rect(xleft = 1, ybottom = 0, xright = 4, ytop = 4, 
      border = "black", lwd = 3, col = myPal[2])
 rect(xleft = 3, ybottom = 0, xright = 6, ytop = 4, 
-     border = "black", lwd = 3, col = myPal[3])
+     border = "black", lwd = 3, col = myPal[1])
 rect(xleft = 6, ybottom = 4, xright = 10, ytop = 7, 
      border = "black", lwd = 3, col = myPal[1])
 rect(xleft = 6, ybottom = 7, xright = 10, ytop = 9, 
      border = "black", lwd = 3, col = myPal[2])
 rect(xleft = 6, ybottom = 9, xright = 10, ytop = 10, 
-     border = "black", lwd = 3, col = myPal[3])
+     border = "black", lwd = 3, col = myPal[1])
 ```
 
 ##
 
 ```{r cache = TRUE}
 plot(
-  c(0, 10), c(0, 10), 
+  c(0, 14), c(0, 14), 
   type = "n", axes = FALSE, xlab = "", ylab = "", asp = 1)
 rect(xleft = 0, ybottom = 0, xright = 10, ytop = 10, 
      border = "black", lwd = 3, col = bgcol)
@@ -340,32 +340,28 @@ lines(x = c(1,1), y = c(0,4), lwd = 3)
 lines(x = c(3,3), y = c(0,4), lwd = 3)
 lines(x = c(6,10), y = c(9, 9), lwd = 3)
 lines(x = c(6,10), y = c(7, 7), lwd = 3)
-text(8, 2, expression(2 %*% 4 %*% 4))
-mtext('2', side=1, line = 0.0, at=2)
-mtext('3', side=1, line = 0.0, at=4.5)
-mtext('4', side=2, line = -4, at=2)
-mtext('1', side=4, line = -4, at=9.5)
-mtext('2', side=4, line = -4, at=8)
-mtext('4', side=3, line = 0, at=8)
+text(8, 2, expression(1 %*% 4 %*% 4))
 rect(xleft = 0, ybottom = 0, xright = 1, ytop = 4, 
-     border = "black", lwd = 3, col = "white")
+     border = "black", lwd = 3, col = myPal[1])
 rect(xleft = 1, ybottom = 0, xright = 4, ytop = 4, 
      border = "black", lwd = 3, col = myPal[2])
 rect(xleft = 3, ybottom = 0, xright = 6, ytop = 4, 
-     border = "black", lwd = 3, col = myPal[3])
+     border = "black", lwd = 3, col = myPal[1])
 rect(xleft = 6, ybottom = 4, xright = 10, ytop = 7, 
      border = "black", lwd = 3, col = "white")
 rect(xleft = 6, ybottom = 7, xright = 10, ytop = 9, 
      border = "black", lwd = 3, col = myPal[2])
 rect(xleft = 6, ybottom = 9, xright = 10, ytop = 10, 
-     border = "black", lwd = 3, col = myPal[3])
+     border = "black", lwd = 3, col = "white")
+rect(xleft = 10, ybottom = 10, xright = 14, ytop = 14, 
+     border = "black", lwd = 3, col = myPal[1])
 ```
 
 ##
 
 ```{r cache = TRUE}
 plot(
-  c(0, 10), c(0, 10), 
+  c(0, 14), c(0, 14), 
   type = "n", axes = FALSE, xlab = "", ylab = "", asp = 1)
 rect(xleft = 0, ybottom = 0, xright = 10, ytop = 10, 
      border = "black", lwd = 3, col = bgcol)
@@ -375,23 +371,58 @@ lines(x = c(1,1), y = c(0,4), lwd = 3)
 lines(x = c(3,3), y = c(0,4), lwd = 3)
 lines(x = c(6,10), y = c(9, 9), lwd = 3)
 lines(x = c(6,10), y = c(7, 7), lwd = 3)
-text(8, 2, expression(3 %*% 4 %*% 4))
-mtext('3', side=1, line = 0.0, at=4.5)
-mtext('4', side=2, line = -4, at=2)
-mtext('1', side=4, line = -4, at=9.5)
-mtext('4', side=3, line = 0, at=8)
+text(8, 2, expression(1 %*% 4 %*% 4))
+rect(xleft = 0, ybottom = 0, xright = 1, ytop = 4, 
+     border = "black", lwd = 3, col = "white")
+rect(xleft = 1, ybottom = 0, xright = 4, ytop = 4, 
+     border = "black", lwd = 3, col = myPal[2])
+rect(xleft = 3, ybottom = 0, xright = 6, ytop = 4, 
+     border = "black", lwd = 3, col = "white")
+rect(xleft = 6, ybottom = 4, xright = 10, ytop = 7, 
+     border = "black", lwd = 3, col = "white")
+rect(xleft = 6, ybottom = 7, xright = 10, ytop = 9, 
+     border = "black", lwd = 3, col = myPal[2])
+rect(xleft = 6, ybottom = 9, xright = 10, ytop = 10, 
+     border = "black", lwd = 3, col = "white")
+rect(xleft = 10, ybottom = 10, xright = 14, ytop = 14, 
+     border = "black", lwd = 3, col = myPal[1])
+rect(xleft = 0, ybottom = 10, xright = 4, ytop = 14, 
+     border = "black", lwd = 3, col = myPal[1])
+```
+
+##
+
+```{r cache = TRUE}
+plot(
+  c(0, 14), c(0, 14), 
+  type = "n", axes = FALSE, xlab = "", ylab = "", asp = 1)
+rect(xleft = 0, ybottom = 0, xright = 10, ytop = 10, 
+     border = "black", lwd = 3, col = bgcol)
+lines(x = c(0,10), y = c(4, 4), lwd = 3)
+lines(x = c(6,6), y = c(0, 10), lwd = 3)
+lines(x = c(1,1), y = c(0,4), lwd = 3)
+lines(x = c(3,3), y = c(0,4), lwd = 3)
+lines(x = c(6,10), y = c(9, 9), lwd = 3)
+lines(x = c(6,10), y = c(7, 7), lwd = 3)
+text(8, 2, expression(1 %*% 4 %*% 4))
 rect(xleft = 0, ybottom = 0, xright = 1, ytop = 4, 
      border = "black", lwd = 3, col = "white")
 rect(xleft = 1, ybottom = 0, xright = 4, ytop = 4, 
      border = "black", lwd = 3, col = "white")
 rect(xleft = 3, ybottom = 0, xright = 6, ytop = 4, 
-     border = "black", lwd = 3, col = myPal[3])
+     border = "black", lwd = 3, col = "white")
 rect(xleft = 6, ybottom = 4, xright = 10, ytop = 7, 
      border = "black", lwd = 3, col = "white")
 rect(xleft = 6, ybottom = 7, xright = 10, ytop = 9, 
      border = "black", lwd = 3, col = 'white')
 rect(xleft = 6, ybottom = 9, xright = 10, ytop = 10, 
-     border = "black", lwd = 3, col = myPal[3])
+     border = "black", lwd = 3, col = "white")
+rect(xleft = 10, ybottom = 10, xright = 14, ytop = 14, 
+     border = "black", lwd = 3, col = myPal[1])
+rect(xleft = 0, ybottom = 10, xright = 4, ytop = 14, 
+     border = "black", lwd = 3, col = myPal[1])
+rect(xleft = 5, ybottom = 10, xright = 9, ytop = 14, 
+     border = "black", lwd = 3, col = myPal[1])
 ```
 
 ##
@@ -400,27 +431,11 @@ rect(xleft = 6, ybottom = 9, xright = 10, ytop = 10,
 plot(
   c(0, 10), c(0, 10), 
   type = "n", axes = FALSE, xlab = "", ylab = "", asp = 1)
-rect(xleft = 0, ybottom = 0, xright = 10, ytop = 10, 
+rect(xleft = 0, ybottom = 4, xright = 6, ytop = 10, 
      border = "black", lwd = 3, col = bgcol)
-lines(x = c(0,10), y = c(4, 4), lwd = 3)
-lines(x = c(6,6), y = c(0, 10), lwd = 3)
-lines(x = c(1,1), y = c(0,4), lwd = 3)
-lines(x = c(3,3), y = c(0,4), lwd = 3)
-lines(x = c(6,10), y = c(9, 9), lwd = 3)
-lines(x = c(6,10), y = c(7, 7), lwd = 3)
+rect(xleft = 6, ybottom = 0, xright = 10, ytop = 4, 
+     border = "black", lwd = 3, col = bgcol)
 text(8, 2, expression(4 %*% 4 %*% 4))
-rect(xleft = 0, ybottom = 0, xright = 1, ytop = 4, 
-     border = "black", lwd = 3, col = "white")
-rect(xleft = 1, ybottom = 0, xright = 4, ytop = 4, 
-     border = "black", lwd = 3, col = "white")
-rect(xleft = 3, ybottom = 0, xright = 6, ytop = 4, 
-     border = "black", lwd = 3, col = "white")
-rect(xleft = 6, ybottom = 4, xright = 10, ytop = 7, 
-     border = "black", lwd = 3, col = "white")
-rect(xleft = 6, ybottom = 7, xright = 10, ytop = 9, 
-     border = "black", lwd = 3, col = 'white')
-rect(xleft = 6, ybottom = 9, xright = 10, ytop = 10, 
-     border = "black", lwd = 3, col = "white")
 ```
 
 ##
