@@ -167,9 +167,9 @@ Jayadeva ($\sim 900$'s CE) is said to have developed the iterative *chakravala* 
 * produces integral solutution for a $k$ smaller in absolute value
 * terminates in $k = \pm1,\pm2\pm4$.
 
-Bhaskara (1200's CE) describes this method in his work *Bijaganita*.
+Described by Bhaskara (1200s) in his *Bijaganita*.
 
-A.A.K Ayyangar provides a proof (1930), said to contai error.
+A.A.K Ayyangar provides a proof (1930), said to contain error.
 
 Anne Bauval (2010) gives a corrected, shorter proof.
 
