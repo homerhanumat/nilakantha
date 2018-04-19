@@ -93,12 +93,14 @@ $$((-\beta_1)^2-N\alpha_1^2)(\beta_2^2-N\alpha_2^2)\\
 ##
 
 $$
-\begin{aligned}
-((-\beta_1)^2-N\alpha_1^2)(\beta_2^2-N\alpha_2^2)=(\beta_1\beta_2+N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2+\alpha_1\beta_2)^2,\\
+((-\beta_1)^2-N\alpha_1^2)(\beta_2^2-N\alpha_2^2) =\\
+(\beta_1\beta_2+N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2+\alpha_1\beta_2)^2,
+$$
+
+$$
 (-k_1)(-k_2)=(\beta_1\beta_2+N\alpha_1\alpha_2)^2-N(\beta_1\alpha_2+\alpha_1\beta_2)^2,\\
 N(\beta_1\alpha_2+\alpha_1\beta_2)^2+k_1k_2=(\beta_1\beta_2+N\alpha_1\alpha_2)^2,\\
 N(\beta_1\alpha_2+\alpha_1\beta_2)^2+k_1k_2=(N\alpha_1\alpha_2 + \beta_1\beta_2)^2.
-\end{aligned}
 $$
 
 
@@ -164,8 +166,8 @@ But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-ma
 Jayadeva ($\sim 900$'s CE) is said to have developed the iterative *chakravala* ("cyclic") method that
 
 * begins with integral "close" solution $Na^2+k=b^2$
-* produces integral solutution for a $k$ smaller in absolute value
-* terminates in $k = \pm1,\pm2\pm4$.
+* produces integral solutution for a new value of $k$
+* eventually one reaches $k = \pm1,\pm2\pm4$.
 
 Described by Bhaskara (1200s) in his *Bijaganita*.
 
