@@ -8,6 +8,7 @@ output:
     center: true
     transition: convex
     reveal_options:
+      center: false
       minScale: 1.0
       maxScale: 1.0
 ---
@@ -24,12 +25,14 @@ rectcol <- "lightgray"
 myPal <- brewer.pal(n = 3, "Set2")
 ```
 
-# Prolegomena Quadratica
+# Prolegomena Quadratica { .center }
 
 
 ## Congratulations, Pat Costello!
 
-Pat's doctoral training was in quadratic forms.
+<br>
+<br>
+Prof. Costello's doctoral training was in quadratic forms.
 
 ## Brahmagupta
 
@@ -113,13 +116,38 @@ $$
 
 Brahmagupta wants integral solutions of equations of the form $Nx^2 + 1 = y^2$. His idea:
 
-1. Find a "close" solution for some $k$:  i.e., find $a,b$ so that $Na^2 + k = b^2$
-2. Then by his lemma, a solution of is $Nx^2 + k^2 = y^2$:
+Find a "close" solution for some $k$:  i.e., find $a,b$ so that $Na^2 + k = b^2$
+
+Then by his lemma, *bhavana* of the with itself:
 
 $$x = 2ab, \,\,y = Na^2+b^2.$$
-3. Brahmagupta knew that if $k=\pm1, \pm2, \pm4$ then both $x$ and $y$ are multiples of $k$.  Hence $(x/k, y/k)$ are integral solutions of  $Nx^2 + 1 = y^2$.
+solves:
+$$Nx^2 + k^2 = y^2$$
 
-## Possible Rationale ($k=4$)
+## Case $k=-1$
+
+We have:
+
+$$Na^2 -1 = b^2.$$
+
+Then the *bhavana* of the solutions with itself yields the desired integral solution immediately:
+
+$$N(2ab)^2+1=(b^2+Na^2)^2.$$
+
+## Case $k=\pm2$
+
+We have:  $Na^2 \pm2 = b^2$.  Then *bhavana* gives:
+
+$$N(2ab)^2+4=(b^2+Na^2)^2,\\
+N(2ab)^2+4=(b^2+Na^2)^2,\\
+N(2ab)^2+4=(b^2+b^2\mp2)^2,\\
+N(2ab)^2+4=(2b^2 \mp2)^2,\\
+N(ab)^2+1=(b^2 \mp)^2$$
+
+
+*"The two square roots, divided by the additive or the subtractive, are the additive solutions."*
+
+## Case $k=4$ (Possible Rationale)
 
 Suppose that $a$ and $b$ are integers such that
 
@@ -150,16 +178,10 @@ $$(a\frac{b^2-1}{2},b\frac{b^2-3}{2}).$$
 
 This solution is integral.
 
+## Case $k=-4$
 
+A wee bit more complex than the previus case (at most one more *bhavana*).
 
-
-## "Brahmagupta Identity"
-
-$$(a^2+nb^2)(c^2+nd^2)=(ac+nbd)^2+n(ad-bc)^2.$$
-
-Not mentioned by Brahmagupta.  Also not mentioned in any extant pre-modern Indian proofs (that I know of).
-
-But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-manjul-bhargava) as a child.
 
 ## Later Developments
 
@@ -175,7 +197,17 @@ A.A.K Ayyangar provides a proof (1930), said to contain error.
 
 Anne Bauval (2010) gives a corrected, shorter proof.
 
-# Nilakantha's Summations
+## "Brahmagupta Identity"
+
+$$(a^2+nb^2)(c^2+nd^2)=(ac+nbd)^2+n(ad-bc)^2,$$
+
+used by us to verify to verify Brahamagupta's *bhavana* Lemma, is not mentioned by Brahmagupta.  
+
+Also not mentioned in any extant pre-modern Indian proofs (that I know of).
+
+But it inspired [Manjul Bhargava](https://plus.maths.org/content/conversation-manjul-bhargava) as a child.
+
+# Nilakantha's Summations { .center }
 
 ## The Kerala School
 
@@ -514,7 +546,9 @@ rect(xleft = 6, ybottom = 0, xright = 10, ytop = 4,
 text(8, 2, expression(4^3))
 ```
 
-## References/Resources
+# References/Resources  { .center }
+
+## ( .center )
 
 1. *The Mathematics of Egypt, Mesopotamia, China, India and Islam:  A Sourcebook*, ed. V Katz. Princeton University Press, 2007.
 2. *Brahmagupta and His Works*, Satya Prakash.  Indian Inst. Astronomical & Sanskrit Research, New Delhi, 1968.
